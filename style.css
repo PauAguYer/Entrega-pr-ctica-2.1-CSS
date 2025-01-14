@@ -1,0 +1,57 @@
+*{
+    background-color: lightblue;
+}
+
+span.s{
+    font-size: 100px;
+    color: black;
+
+}
+
+h2.titol{
+    text-align: center;
+    color: blue;
+}
+
+nav{
+    color: blue;
+    display: inline-flex;
+    text-align: center;
+    margin-left: 45%;
+}
+
+
+p.parraf::first-line{
+    color: red;
+}
+
+nav p:hover{
+    background-color: yellow;
+    color: red;
+}
+
+
+a:link{
+    background-color: white;
+}
+
+a:visited{
+    background-color: blue;
+}
+
+
+h2{
+    counter-reset: contadorciclos;
+}
+
+p.producto::before{
+    content: counter(contadorciclos) " ";
+    counter-increment: contadorciclos;
+    font-weight: bold;
+}
+
+img{
+    float: right;
+    width: 350px;
+    height: 350px;
+}
